@@ -2,7 +2,7 @@
 # the duty of this server is a jump server
 # we describe this as a bastion server
 module "bastion-host" {
-  source                    = "git::https://github.com/ejbest/proxmox-base-module.git//?ref=main"
+  source                    = "git::https://github.com/techwwwyzzerd/proxmox-base-module.git//?ref=main"
   pve_vm_depends_on         = []                          # ignore or add any dependency if there
   proxmox_host_node         = local.proxmox_node_hostname # hostname of the proxmox base host
   proxmox_host_ip_address   = local.proxmox_host
